@@ -1,16 +1,306 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <android.support.v7.widget.RecyclerView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerv_view">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    </android.support.v7.widget.RecyclerView>
+<android.support.v7.widget.CardView
+        android:id="@+id/parent_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="4dp"
+        android:onClick="kepesan"
+        >
 
-</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tempat1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="166dp"
+            android:layout_height="174dp"
+            android:layout_marginBottom="4dp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/daeng" />
+
+        <TextView
+            android:id="@+id/image_name"
+            android:layout_width="152dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Daeng Coffee And Eatery Jimbaran" />
+
+        <TextView
+            android:id="@+id/image_desc"
+            android:layout_width="152dp"
+            android:layout_height="67dp"
+            android:layout_below="@id/image_name"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:text="Jl. By Pass Ngurah Rai No.47, Jimbaran, Kut. Sel., Kota Denpasar, Bali"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_desc"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:text="12.00-00.30" />
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/parent_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="4dp"
+        android:onClick="kepesan2">
+
+        <RelativeLayout
+            android:id="@+id/tempat11"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="166dp"
+                android:layout_height="174dp"
+                android:layout_marginBottom="4dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/anomali" />
+
+            <TextView
+                android:id="@+id/image_name1"
+                android:layout_width="152dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/image1"
+                android:layout_toRightOf="@id/image1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Anomali Coffee Ubud" />
+
+            <TextView
+                android:id="@+id/image_desc1"
+                android:layout_width="152dp"
+                android:layout_height="67dp"
+                android:layout_below="@id/image_name1"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/image1"
+                android:layout_toRightOf="@id/image1"
+                android:text="Jl. Raya Ubud No.88, Petulu, Ubud, Kabupaten Gianyar, Bali 80571"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_desc1"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/image1"
+                android:layout_toRightOf="@id/image1"
+                android:text="07.00 - 22.00" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/parent_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="4dp"
+            android:onClick="kepesan3">
+
+            <RelativeLayout
+                android:id="@+id/tempat12"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="166dp"
+                    android:layout_height="174dp"
+                    android:layout_marginBottom="4dp"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/eco" />
+
+                <TextView
+                    android:id="@+id/image_name2"
+                    android:layout_width="152dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/image2"
+                    android:layout_toRightOf="@id/image2"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Kintamani Coffee - Eco Bike Coffee" />
+
+                <TextView
+                    android:id="@+id/image_desc2"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:layout_below="@id/image_name2"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/image2"
+                    android:layout_toRightOf="@id/image2"
+                    android:text="Jl. Raya Penelokan, Batur Sel., Kintamani, Kabupaten Bangli, Bali 80652"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_desc2"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/image2"
+                    android:layout_toRightOf="@id/image2"
+                    android:text="08.00 - 19.00" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/parent_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="4dp"
+            android:onClick="kepesan4">
+
+            <RelativeLayout
+                android:id="@+id/tempat13"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="166dp"
+                    android:layout_height="174dp"
+                    android:layout_marginBottom="4dp"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jim" />
+
+                <TextView
+                    android:id="@+id/image_name3"
+                    android:layout_width="152dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/image3"
+                    android:layout_toRightOf="@id/image3"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Tanamera Coffee - Bali" />
+
+                <TextView
+                    android:id="@+id/image_desc3"
+                    android:layout_width="152dp"
+                    android:layout_height="67dp"
+                    android:layout_below="@id/image_name3"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/image3"
+                    android:layout_toRightOf="@id/image3"
+                    android:text=" Jl. Wanagiri No.10, Jimbaran, Kuta Sel., Kabupaten Badung, Bali 80361"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_desc3"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/image3"
+                    android:layout_toRightOf="@id/image3"
+                    android:text="08.00 - 22.00" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

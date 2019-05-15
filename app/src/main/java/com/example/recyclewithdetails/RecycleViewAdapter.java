@@ -28,16 +28,32 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     private ArrayList<String> mImageNames = new ArrayList<>();
     private ArrayList<String> mImages = new ArrayList<>();
     private ArrayList<String> mImageDesc = new ArrayList<>();
-    private ArrayList<String> mImageDet = new ArrayList<>();
+    private ArrayList<String> parent_layout4 = new ArrayList<>();
+    private ArrayList<String> image_desc = new ArrayList<>();
+    private ArrayList<String> image_desc1 = new ArrayList<>();
+    private ArrayList<String> image_desc2 = new ArrayList<>();
+    private ArrayList<String> image_desc3 = new ArrayList<>();
+
+
 
     private Context mContext;
 
-    public RecycleViewAdapter(Context mContext,ArrayList<String> mImageNames, ArrayList<String> mImages, ArrayList<String> mImageDesc , ArrayList<String> mImageDet ) {
+    public RecycleViewAdapter(Context mContext,ArrayList<String> mImageNames, ArrayList<String> mImages,
+                              ArrayList<String> mImageDesc, ArrayList<String> Kopi, ArrayList<String> tempat1,
+                              ArrayList<String> tempat11, ArrayList<String> tempat12, ArrayList<String> tempat13,
+                              ArrayList<String> parent_layout1, ArrayList<String> parent_layout2, ArrayList<String> parent_layout3,
+                              ArrayList<String> image_name, ArrayList<String> image_name1, ArrayList<String> image_name2,
+                              ArrayList<String> image_name3, ArrayList<String> image_desc,ArrayList<String> image_desc2,
+                              ArrayList<String> image_desc3) {
         this.mImageNames = mImageNames;
         this.mImages = mImages;
         this.mImageDesc = mImageDesc;
-        this.mImageDet = mImageDet;
         this.mContext = mContext;
+        this.parent_layout4 = parent_layout4;
+        this.image_desc = image_desc;
+        this.image_desc2 = image_desc2;
+        this.image_desc1 = image_desc1;
+        this.image_desc3 = image_desc3;
     }
 
     @NonNull
@@ -65,25 +81,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
                 Log.d(TAG,"onClick: clicked on: "+ mImageNames.get(i));
                 Toast.makeText(mContext, mImageNames.get(i),Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(mContext, GalleryActivity.class);
-                intent.putExtra("image_url",mImages.get(i));
-                intent.putExtra("image_name",mImageNames.get(i));
-                intent.putExtra("image_desc",mImageDet.get(i));
+                Intent intent = new Intent(mContext, Main2Activity.class);
                 mContext.startActivity(intent);
-            }
-        });
-        holder.btnFavorite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d(TAG,"onClick: clicked on: "+ mImageNames.get(i));
-                Toast.makeText(mContext, "Favorite"+mImageNames.get(i),Toast.LENGTH_SHORT).show();
-            }
-        });
-        holder.btnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d(TAG,"onClick: clicked on: "+ mImageNames.get(i));
-                Toast.makeText(mContext, "Share"+ mImageNames.get(i),Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -102,8 +101,6 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        Button btnFavorite;
-        Button btnShare;
         ImageView image;
         TextView imageName;
         TextView imageDesc;
@@ -117,8 +114,6 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             imageName = itemView.findViewById(R.id.image_name);
             imageDesc = itemView.findViewById(R.id.image_desc);
             parentLayout = itemView.findViewById(R.id.parent_layout);
-            btnFavorite = itemView.findViewById(R.id.btn_set_favorite);
-            btnShare = itemView.findViewById(R.id.btn_set_share);
         }
     }
 }

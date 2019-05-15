@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main33Activity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Nama"
+            android:textSize="12pt"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/nama1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="nama 1"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12pt"
+            android:textColor="#000000"
+            android:text="No Telp."/>
+
+        <TextView
+            android:id="@+id/telpon1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="telpon 1"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12pt"
+            android:textColor="#000000"
+            android:text="Jumlah Orang"/>
+
+        <TextView
+            android:id="@+id/orang1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="orang 1"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12pt"
+            android:textColor="#000000"
+            android:text="Jam Kedatangan"/>
+
+        <TextView
+            android:id="@+id/jam1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="jam 1"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12pt"
+            android:textColor="#000000"
+            android:text="Tanggal"/>
+
+        <TextView
+            android:id="@+id/tanggal1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="tanggal 1"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12pt"
+            android:textColor="#000000"
+            android:text="Pesanan"/>
+
+        <TextView
+            android:id="@+id/pesanan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="pesanan"
+            android:textSize="10pt"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:text="Pesan" />
+
+    </LinearLayout>
+</ScrollView>
