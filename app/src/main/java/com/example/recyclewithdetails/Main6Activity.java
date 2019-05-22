@@ -41,7 +41,7 @@ public class Main6Activity extends AppCompatActivity {
         mNames.add("Americano");
         mDesc.add("Rp. 30.000");
 
-        mImageUrls.add("https://www.pjscoffee.com/uploads/menu/iced-mocha-blackjpg");
+        mImageUrls.add("https://bakingmischief.com/wp-content/uploads/2019/05/iced-mocha-picture-683x1024.jpg");
         mNames.add("Iced Mocha");
         mDesc.add("Rp. 40.000");
 
