@@ -53,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         Intent ayopesan4= new Intent(MainActivity.this,Main6Activity.class);
         startActivity(ayopesan4);
     }
-
-
+    public void kepesan5 (View view) {
+        Intent ayopesan5= new Intent(MainActivity.this,Main7Activity.class);
+        startActivity(ayopesan5);
+    }
+    public void kepesan6 (View view) {
+        Intent ayopesan6= new Intent(MainActivity.this,Main8Activity.class);
+        startActivity(ayopesan6);
+    }
 }

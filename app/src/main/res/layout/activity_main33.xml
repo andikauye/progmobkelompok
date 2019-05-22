@@ -11,6 +11,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/kopilogo"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"

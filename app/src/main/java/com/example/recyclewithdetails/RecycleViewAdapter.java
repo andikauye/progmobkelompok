@@ -28,32 +28,19 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     private ArrayList<String> mImageNames = new ArrayList<>();
     private ArrayList<String> mImages = new ArrayList<>();
     private ArrayList<String> mImageDesc = new ArrayList<>();
-    private ArrayList<String> parent_layout4 = new ArrayList<>();
-    private ArrayList<String> image_desc = new ArrayList<>();
-    private ArrayList<String> image_desc1 = new ArrayList<>();
-    private ArrayList<String> image_desc2 = new ArrayList<>();
-    private ArrayList<String> image_desc3 = new ArrayList<>();
+
 
 
 
     private Context mContext;
 
     public RecycleViewAdapter(Context mContext,ArrayList<String> mImageNames, ArrayList<String> mImages,
-                              ArrayList<String> mImageDesc, ArrayList<String> Kopi, ArrayList<String> tempat1,
-                              ArrayList<String> tempat11, ArrayList<String> tempat12, ArrayList<String> tempat13,
-                              ArrayList<String> parent_layout1, ArrayList<String> parent_layout2, ArrayList<String> parent_layout3,
-                              ArrayList<String> image_name, ArrayList<String> image_name1, ArrayList<String> image_name2,
-                              ArrayList<String> image_name3, ArrayList<String> image_desc,ArrayList<String> image_desc2,
-                              ArrayList<String> image_desc3) {
+                              ArrayList<String> mImageDesc ) {
         this.mImageNames = mImageNames;
         this.mImages = mImages;
         this.mImageDesc = mImageDesc;
         this.mContext = mContext;
-        this.parent_layout4 = parent_layout4;
-        this.image_desc = image_desc;
-        this.image_desc2 = image_desc2;
-        this.image_desc1 = image_desc1;
-        this.image_desc3 = image_desc3;
+
     }
 
     @NonNull
@@ -81,7 +68,11 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
                 Log.d(TAG,"onClick: clicked on: "+ mImageNames.get(i));
                 Toast.makeText(mContext, mImageNames.get(i),Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(mContext, Main2Activity.class);
+                Intent intent = new Intent(mContext, gallerymenu.class);
+                intent.putExtra("image_url",mImages.get(i));
+                intent.putExtra("image_desc",mImageDesc.get(i));
+                intent.putExtra("image_name",mImageNames.get(i));
+
                 mContext.startActivity(intent);
             }
         });
