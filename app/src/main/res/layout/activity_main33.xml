@@ -18,13 +18,19 @@
             android:textSize="12pt"
             android:textColor="#000000"/>
 
-
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="8dp">
         <TextView
             android:id="@+id/nama1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:text="nama 1"
             android:textSize="10pt"/>
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"
@@ -33,12 +39,19 @@
             android:textColor="#000000"
             android:text="No Telp."/>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="8dp">
         <TextView
             android:id="@+id/telpon1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:text="telpon 1"
             android:textSize="10pt"/>
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"
@@ -47,12 +60,19 @@
             android:textColor="#000000"
             android:text="Jumlah Orang"/>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="8dp">
         <TextView
             android:id="@+id/orang1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:text="orang 1"
             android:textSize="10pt"/>
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"
@@ -61,12 +81,19 @@
             android:textColor="#000000"
             android:text="Jam Kedatangan"/>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="8dp">
         <TextView
             android:id="@+id/jam1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:text="jam 1"
             android:textSize="10pt"/>
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"
@@ -75,12 +102,19 @@
             android:textColor="#000000"
             android:text="Tanggal"/>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="8dp">
         <TextView
             android:id="@+id/tanggal1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:text="tanggal 1"
             android:textSize="10pt"/>
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"
@@ -89,12 +123,19 @@
             android:textColor="#000000"
             android:text="Pesanan"/>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="8dp">
         <TextView
-            android:id="@+id/pesanan"
+            android:id="@+id/pesanan1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="pesanan"
             android:textSize="10pt"/>
+        </android.support.v7.widget.CardView>
 
         <Button
             android:id="@+id/button"
@@ -102,7 +143,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:text="Pesan" />
+            android:text="Home"
+            android:onClick="kembali"/>
 
     </LinearLayout>
 </ScrollView>
